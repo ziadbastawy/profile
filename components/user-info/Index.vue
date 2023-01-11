@@ -38,8 +38,8 @@ const user = ref({ name: "Ziad Bastawy", jobTitle: "Na2ash" });
         Download CV
       </button>
     </div>
-    <div class="absolute bottom-4 left-4">
-      <p class="text-md text-white">© 2020 All rights reserved.</p>
+    <div class="absolute bottom-4 left-24">
+      <p class="text-sm text-white">© 2020 All rights reserved.</p>
     </div>
   </div>
 </template>

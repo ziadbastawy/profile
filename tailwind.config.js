@@ -9,7 +9,20 @@ module.exports = {
     ],
     theme: {
         extend: {
+            colors: {
+                'primary': "#0ba376",
+                "primary-bg": "#444",
+                "secondry-bg": "#222",
+                "card-bg": "#333",
+                "secondry-text": '#aaa'
+            },
+            borderRadius: {
+                '4xl': '2.5rem'
+            },
             minHeight: {
+                '80': '80vh',
+            },
+            maxHeight: {
                 '80': '80vh',
             },
             padding: {
