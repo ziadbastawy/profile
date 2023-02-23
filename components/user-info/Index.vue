@@ -1,10 +1,9 @@
 <script setup>
 import { ref } from "vue";
 import Avatar from "./Avatar.vue";
-import facebook from "@/assets/images/facebook.vue";
+import github from "@/assets/images/github.vue";
 import linkedin from "@/assets/images/linkedin.vue";
-import twitter from "@/assets/images/twitter.vue";
-const user = ref({ name: "Ziad Bastawy", jobTitle: "Na2ash" });
+const user = ref({ name: "Ziad Bastawy", jobTitle: "Frontend Engineer 💻" });
 </script>
 
 
@@ -18,9 +17,8 @@ const user = ref({ name: "Ziad Bastawy", jobTitle: "Na2ash" });
       {{ user.jobTitle }}
     </p>
     <div class="flex justify-center items-center font-medium mt-5">
-      <a href="#" class="mr-3"><linkedin /></a>
-      <a href="#" class="mr-3"><facebook /></a>
-      <a href="#"><twitter /></a>
+      <a target="_blank" href="https://www.linkedin.com/in/zeyadbastawy/" class="mr-3"><linkedin /></a>
+      <a target="_blank" href="https://github.com/ziadbastawy" class="mr-3"><github /></a>
     </div>
     <div class="text-center mt-14">
       <button
@@ -37,9 +35,6 @@ const user = ref({ name: "Ziad Bastawy", jobTitle: "Na2ash" });
       >
         Download CV
       </button>
-    </div>
-    <div class="absolute bottom-4 left-24">
-      <p class="text-sm text-white">© 2020 All rights reserved.</p>
     </div>
   </div>
 </template>

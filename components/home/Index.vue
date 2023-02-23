@@ -11,7 +11,10 @@
       text-white
     "
   >
-    <h1 class="text-5xl font-bold">Ziad Bastawy</h1>
+    <div class="flex items-center">
+      <p class="text-5xl font-bold mr-2">Ziad Bastawy</p>
+      <img src="@/assets/images/one-piece.png" alt="" class="w-20" />
+    </div>
     <p class="my-6 text-xl">Frontend Engineer</p>
   </div>
 </template>

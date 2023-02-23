@@ -30,6 +30,12 @@ module.exports = {
             },
             margin: {
                 'auto': 'auto'
+            },
+            width: {
+                'px': '1px'
+            },
+            inset: {
+                '35': "35%"
             }
         },
 

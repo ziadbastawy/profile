@@ -38,45 +38,4 @@ export default {
 </template>
 
 <style>
-.title::after {
-  position: absolute;
-  opacity: 0.45;
-  top: 12px;
-  right: -15px;
-  content: "";
-  height: 35px;
-  width: 50px;
-  background-image: -webkit-repeating-radial-gradient(
-    center center,
-    #0ba376,
-    #0ba376 1px,
-    transparent 0px,
-    transparent 100%
-  );
-  -webkit-background-size: 6px 6px;
-  -moz-background-size: 6px 6px;
-  background-size: 6px 6px;
-  z-index: 0;
-}
-
-.semi-title::after {
-  position: absolute;
-  opacity: 0.45;
-  top: 12px;
-  right: -15px;
-  content: "";
-  height: 25px;
-  width: 40px;
-  background-image: -webkit-repeating-radial-gradient(
-    center center,
-    #0ba376,
-    #0ba376 1px,
-    transparent 0px,
-    transparent 100%
-  );
-  -webkit-background-size: 6px 6px;
-  -moz-background-size: 6px 6px;
-  background-size: 6px 6px;
-  z-index: 0;
-}
 </style>

@@ -22,7 +22,7 @@ export default {
       "fade-x",
       "fade-y",
       "roll-in-left",
-      "rotate",
+      // "rotate",
       "scale-in",
       "shrink",
       "swirl",
