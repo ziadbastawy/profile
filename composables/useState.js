@@ -34,9 +34,9 @@ export default reactive({
     ],
 
     activeTab: {
-        id: "experience",
-        label: "Experience",
-        component: "Experience",
+        id: "home",
+        label: "Home",
+        component: "Home",
         route: "",
     },
 
