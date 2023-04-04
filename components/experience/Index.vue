@@ -9,72 +9,108 @@ export default {
   setup() {
     const educations = [
       {
-        year: "2018",
+        year: "2014 - 2018",
         organiztion: "Akhabr Elyoum Academy",
         title: "Computer Science",
         description:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, dolor, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, dolor, ",
-      },
-      {
-        year: "2018",
-        organiztion: "Akhabr Elyoum Academy",
-        title: "Computer Science",
-        description:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, dolor, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, dolor, ",
+          "Studing principal areas of study within Computer Science include artificial intelligence, computer systems and networks, security, database systems, human computer interaction, vision and graphics, numerical analysis, programming languages, software engineering, bioinformatics and theory of computing",
       },
     ];
- 
+
     const experiences = [
       {
-        year: "2018",
-        organiztion: "Akhabr Elyoum Academy",
-        title: "Computer Science",
-        description:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, dolor, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, dolor, ",
+        year: "Dec 2021 - present",
+        organiztion: "Arabyads (Boostiny)",
+        title: "Mid Frontend Engineer",
+        descriptions: [
+          "Work in a multidisciplinary team with other professional back-end developers, QC, and web designers.",
+          "Maintain, improve, and implement new features to the internal team dashboard using Vuejs, Vuex.",
+          "Participate in the sprint grooming, and fill the business gaps.",
+        ],
       },
       {
-        year: "2018",
-        organiztion: "Akhabr Elyoum Academy",
-        title: "Computer Science",
+        year: "Oct 2021 - Apr 2022",
+        organiztion: "FreeLancer - CofePedia",
+        title: "Frontend Engineer",
+        descriptions: [
+          "Responsible for project delivery.",
+          "Divide Tasks through the team.",
+          "Code review.",
+          "Built core functions.",
+        ],
+      },
+      {
+        year: "Dec 2020 - Nov 2021",
+        organiztion: "Schoolia",
+        title: "Frontend Engineer",
+        descriptions: [
+          "We was building LMS using VueJs and Vuesax my tasks divided into",
+          "Building and developing the exam assessment module.",
+          "Revamping both the assignment and task modules for IB and American learning systems.",
+        ],
+      },
+      {
+        year: "Oct 2020 - Apr 2021",
+        organiztion: "EPAL Solution",
+        title: "Part-time Frontend Engineer",
         description:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, dolor, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, dolor, ",
+          "I was working remotely with a company located in Canada to build a system to support real estate companies to manage their relationship with their customers. we were using VueJs and BootstrapVue",
+      },
+      {
+        year: "Dec 2019 - Nov 2021",
+        organiztion: "Eduvaly “Schoolver”",
+        title: "Junior Frontend Engineer",
+        descriptions: [
+          "We was building school managment system (SMS) using VueJs and Vuesax my tasks divided into",
+          "Building and developing different modules.",
+          "Code Review Sessions",
+        ],
       },
     ];
 
     const skills = [
       {
-        key: "CSS",
-        value: 56,
-      },
-      {
         key: "HTML",
-        value: 67,
+        value: 90,
       },
       {
-        key: "HTML5",
-        value: 23,
+        key: "CSS",
+        value: 80,
+      },
+      {
+        key: "Javascript",
+        value: 90,
+      },
+      {
+        key: "VueJs",
+        value: 90,
       },
     ];
 
     const Knowledges = [
+      "HTML",
+      "PugJS",
+      "CSS",
+      "Bootstrab",
+      "Tailwind",
+      "sass/scss",
       "Javascript",
-      "API",
-      "Axios",
-      "vue.js",
-      "Vuex",
+      "VueJs",
       "Vue Router",
-      "Javascript",
-      "API",
-      "Axios",
-      "vue.js",
-      "Vuex",
-      "Vue Router",
-      "Javascript",
-      "API",
-      "Axios",
-      "vue.js",
-      "Vuex",
-      "Vue Router",
+      "VueX",
+      "API's",
+      "AxiosJs",
+      "Webpack",
+      "Firebase",
+      "Git",
+      "MySQL",
+      "JQuery",
+      "NuxtJs",
+      "Vuetify",
+      "Vuesax",
+      "Jira",
+      "Figma",
+      "Jest",
     ];
 
     return {
@@ -98,14 +134,7 @@ export default {
       <div class="col-span-7">
         <div class="mb-12">
           <h3
-            class="
-              text-xl text-white
-              font-semibold
-              inline-block
-              relative
-              semi-title
-              mb-6
-            "
+            class="text-xl text-white font-semibold inline-block relative semi-title mb-6"
           >
             Eductions
           </h3>
@@ -117,14 +146,7 @@ export default {
         </div>
         <div class="mb-12">
           <h3
-            class="
-              text-xl text-white
-              font-semibold
-              inline-block
-              relative
-              semi-title
-              mb-6
-            "
+            class="text-xl text-white font-semibold inline-block relative semi-title mb-6"
           >
             Experience
           </h3>
@@ -138,14 +160,7 @@ export default {
       <div class="col-span-5 ml-8">
         <div class="mb-12">
           <h3
-            class="
-              text-xl text-white
-              font-semibold
-              inline-block
-              relative
-              semi-title
-              mb-6
-            "
+            class="text-xl text-white font-semibold inline-block relative semi-title mb-6"
           >
             Coding <span class="text-primary"> Skills</span>
           </h3>
@@ -160,14 +175,7 @@ export default {
         </div>
         <div>
           <h3
-            class="
-              text-xl text-white
-              font-semibold
-              inline-block
-              relative
-              semi-title
-              mb-6
-            "
+            class="text-xl text-white font-semibold inline-block relative semi-title mb-6"
           >
             Knowledges
           </h3>
@@ -176,16 +184,7 @@ export default {
             <p
               v-for="(item, index) in Knowledges"
               :key="index"
-              class="
-                bg-primary
-                text-white text-sm
-                py-1
-                px-3
-                rounded-md
-                inline-block
-                mx-1
-                my-1
-              "
+              class="bg-primary text-white text-sm py-1 px-3 rounded-md inline-block mx-1 my-1"
             >
               {{ item }}
             </p>

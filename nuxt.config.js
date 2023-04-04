@@ -32,6 +32,9 @@ export default {
         '@nuxtjs/tailwindcss',
         '@nuxt/postcss8',
     ],
+    link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+    ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [],

@@ -33,7 +33,7 @@ export default {
     <Info />
     <WhatIDo />
     <Testimonials />
-    <FunFacts />
+    <!-- <FunFacts /> -->
   </div>
 </template>
 

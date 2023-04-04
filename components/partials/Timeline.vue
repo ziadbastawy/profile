@@ -13,7 +13,7 @@ export default {
 <template>
   <div class="relative flex flex-row justify-between pb-8">
     <div class="text-secondry-text text-end px-4 basis-4/12">
-      <p class="font-semibold">{{ item.year }}</p>
+      <p class="font-semibold text-sm">{{ item.year }}</p>
       <p class="font-extralight text-xs">{{ item.organiztion }}</p>
     </div>
     <div class="basis-1/12"></div>
@@ -22,9 +22,18 @@ export default {
     ></div>
     <div class="basis-7/12 text-white">
       <p class="text-base font-semibold">{{ item.title }}</p>
-      <p class="text-md font-extralight">
+      <p class="text-md font-extralight" v-if="item.description">
         {{ item.description }}
       </p>
+      <ul v-else>
+        <li
+          class="text-md font-extralight"
+          v-for="description in item.descriptions"
+          :key="description"
+        >
+          {{ description }}
+        </li>
+      </ul>
     </div>
   </div>
 </template>

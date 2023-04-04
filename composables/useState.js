@@ -19,12 +19,12 @@ export default reactive({
         component: "Experience",
         route: "",
     },
-        // {
-        //     id: "portfolio",
-        //     label: "Portfolio",
-        //     component: "Portfolio",
-        //     route: "",
-        // },
+    {
+        id: "portfolio",
+        label: "Portfolio",
+        component: "Portfolio",
+        route: "",
+    },
         // {
         //     id: "contactUs",
         //     label: "Contact Us",
@@ -34,9 +34,9 @@ export default reactive({
     ],
 
     activeTab: {
-        id: "home",
-        label: "Home",
-        component: "Home",
+        id: "experience",
+        label: "Experience",
+        component: "Experience",
         route: "",
     },
 

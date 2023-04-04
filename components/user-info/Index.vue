@@ -4,6 +4,16 @@ import Avatar from "./Avatar.vue";
 import github from "@/assets/images/github.vue";
 import linkedin from "@/assets/images/linkedin.vue";
 const user = ref({ name: "Ziad Bastawy", jobTitle: "Frontend Engineer 💻" });
+
+
+function downloadCv() {
+  let a = document.createElement("a");
+    document.body.appendChild(a);
+    a.style = "display: none";
+    a.href = "https://drive.google.com/uc?export=download&id=1-qKU9ZmFxI7E3qdUWsRh6U_64l0LsYNw";
+    a.download = "ziadbastawy";
+    a.click();
+}
 </script>
 
 
@@ -32,6 +42,7 @@ const user = ref({ name: "Ziad Bastawy", jobTitle: "Frontend Engineer 💻" });
           transition
           ease-in-out
         "
+        @click="downloadCv"
       >
         Download CV
       </button>
